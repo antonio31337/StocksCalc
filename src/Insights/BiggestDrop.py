@@ -21,7 +21,7 @@ class BiggestDrop:
         return biggest_drop, biggest_drop_in_percentage
 
 
-class BiggestPossibleIntradayDrop(BiggestDrop):
+class BiggestIntradayDrop(BiggestDrop):
 
     @staticmethod
     def calculate_drop_in_percentage(prev_data_point, data_point):
