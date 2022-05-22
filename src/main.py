@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from src.DataNormalizer.CsvNormalizer import CsvNormalizer
-from src.Insights.BiggestDrop import BiggestPossibleIntradayDrop, BiggestDropFromOpenToClose
+from DataNormalizer.CsvNormalizer import CsvNormalizer
+from Insights.BiggestDrop import BiggestPossibleIntradayDrop, BiggestDropFromOpenToClose
 
 if __name__ == '__main__':
     this_file_path = Path(__file__).resolve()

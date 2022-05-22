@@ -1,7 +1,7 @@
 import csv
 from pathlib import Path
 
-from src.DataPoints.StockDataPoint import StockDataPoint
+from DataPoints.StockDataPoint import StockDataPoint
 
 
 class CsvNormalizer:
