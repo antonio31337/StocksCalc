@@ -12,9 +12,10 @@ class BiggestDrop:
             if biggest_drop is None:
                 biggest_drop = data_point
                 biggest_drop_in_percentage = 0
-            elif self.calculate_drop_in_percentage(prev_data_point, data_point) > biggest_drop_in_percentage:
+            elif (temp_drop_in_percentage :=
+                    self.calculate_drop_in_percentage(prev_data_point, data_point)) > biggest_drop_in_percentage:
                 biggest_drop = data_point
-                biggest_drop_in_percentage = self.calculate_drop_in_percentage(prev_data_point, data_point)
+                biggest_drop_in_percentage = temp_drop_in_percentage
 
             prev_data_point = data_point
 

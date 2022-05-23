@@ -5,9 +5,9 @@ from Insights.BiggestDrop import BiggestIntradayDrop, BiggestDropFromOpenToClose
 
 if __name__ == '__main__':
     this_file_path = Path(__file__).resolve()
-    # csv_path = this_file_path.parent / Path('./StocksData/NasdaqComposite/IXIC.csv')
+    csv_path = this_file_path.parent / Path('./StocksData/NasdaqComposite/IXIC.csv')
     # csv_path = this_file_path.parent / Path('./StocksData/Nasdaq100/NDX.csv')
-    csv_path = this_file_path.parent / Path('./StocksData/SP500/GSPC.csv')
+    # csv_path = this_file_path.parent / Path('./StocksData/SP500/GSPC.csv')
 
     normalizer = CsvNormalizer(csv_path)
 
